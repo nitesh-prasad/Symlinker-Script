@@ -19,3 +19,6 @@ run_program("/tmp/runme.sh");
 delete("/tmp/runme.sh");
 ui_print(" ");
 ui_print(" - Done, reboot!");
+ui_print("----------------------------------");
+ui_print(" DO NOT DOUBLE FLASH THIS SCRIPT! ");
+ui_print("----------------------------------");
