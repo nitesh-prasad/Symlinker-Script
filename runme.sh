@@ -27,8 +27,8 @@ df -h >> ${outfile} 2>&1
 echo "#####END mounting system and data" >> ${outfile} 2>&1
 # Moving files to data partition
 # From system/app folder
-cp -rf "/system/app/Exchange2" "/data/system_app/Exchange2"
-rm -rf "/system/app/Exchange2"
+cp -rf "/system/app/Email" "/data/system_app/Email"
+rm -rf "/system/app/Email"
 cp -rf "/system/app/GoogleTTS" "/data/system_app/GoogleTTS"
 rm -rf "/system/app/GoogleTTS"
 cp -rf "/system/app/Weather" "/data/system_app/Weather"
@@ -41,10 +41,10 @@ rm -rf "/system/priv-app/Phonesky"
 cp -rf "/system/priv-app/Velvet" "/data/system_privapp/Velvet"
 rm -rf "/system/priv-app/Velvet"
 # Set back permissions and symlink (the copied file has the same permissons, still doing for precaution)
-# Exchange2
-chmod 755 "/data/system_app/Exchange2"
-chmod 644 "/data/system_app/Exchange2/Exchange2.apk"
-ln -sf "/data/system_app/Exchange2" "/system/app/Exchange2"
+# Email
+chmod 755 "/data/system_app/Email"
+chmod 644 "/data/system_app/Email/Email.apk"
+ln -sf "/data/system_app/Email" "/system/app/Email"
 # GoogleTTS
 chmod 755 "/data/system_app/GoogleTTS"
 chmod 644 "/data/system_app/GoogleTTS/GoogleTTS.apk"
