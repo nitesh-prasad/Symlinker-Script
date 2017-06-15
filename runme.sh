@@ -38,8 +38,6 @@ rm -rf "/system/app/Weather"
 cp -rf "/system/app/webview" "/data/system_app/webview"
 rm -rf "/system/app/webview"
 # From system/priv-app folder
-cp -rf "/system/priv-app/Phonesky" "/data/system_privapp/Phonesky"
-rm -rf "/system/priv-app/Phonesky"
 cp -rf "/system/priv-app/Velvet" "/data/system_privapp/Velvet"
 rm -rf "/system/priv-app/Velvet"
 # Set back permissions and symlink (the copied file has the same permissons, still doing for precaution)
@@ -63,10 +61,6 @@ ln -sf "/data/system_app/Weather" "/system/app/Weather"
 chmod 755 "/data/system_app/webview"
 chmod 644 "/data/system_app/webview/webview.apk"
 ln -sf "/data/system_app/webview" "/system/app/webview"
-# Phonesky
-chmod 755 "/data/system_privapp/Phonesky"
-chmod 644 "/data/system_privapp/Phonesky/Phonesky.apk"
-ln -sf "/data/system_privapp/Phonesky" "/system/priv-app/Phonesky"
 # Velvet
 chmod 755 "/data/system_privapp/Velvet"
 chmod 644 "/data/system_privapp/Velvet/Velvet.apk"
